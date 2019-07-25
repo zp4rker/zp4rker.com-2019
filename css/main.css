@@ -21,7 +21,9 @@ html, body {
 
     text-align: center;
 
-    animation: scaleIn ease-out .5s;
+    opacity: 0;
+
+    animation: scaleIn ease-out .5s .1s forwards;
 }
 
 .content .logo {
