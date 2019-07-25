@@ -89,3 +89,34 @@ html, body {
         opacity: 1;
     }
 }
+
+@media only screen and (max-width: 980px) {
+    .content .logo {
+        width: 240px;
+        margin-bottom: 40px;
+    }
+
+    .content .name {
+        font-size: 90px;
+        line-height: 30px;
+    }
+
+    .content .bio {
+        font-size: 30px;
+        line-height: 10px;
+    }
+
+    .content .links {
+        width: 400px;
+        margin: 80px auto 0 auto;
+        padding: 0;
+    }
+
+    .content .links li {
+        padding: 0 10px;
+    }
+    .content .links li svg {
+        height: 60px;
+        width: 60px;
+    }
+}
