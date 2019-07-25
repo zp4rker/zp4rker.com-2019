@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,400,600');
 
 html, body {
+    padding: 0;
+    margin: 0;
+
     background-color: #212121;
     color: #FFFFFF;
     font-family: 'Montserrat', sans-serif;
@@ -17,11 +20,13 @@ html, body {
     vertical-align: middle;
 
     text-align: center;
+
+    animation: scaleIn ease-out .5s;
 }
 
 .content .logo {
     width: 120px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .content .name {
@@ -39,3 +44,17 @@ html, body {
     line-height: 5px;
 }
 
+@keyframes scaleIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    75% {
+        transform: scale(1.45);
+        opacity: 0.75;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
