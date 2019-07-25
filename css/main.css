@@ -44,6 +44,37 @@ html, body {
     line-height: 5px;
 }
 
+.content .links {
+    list-style: none;
+    width: 200px;
+    margin: 40px auto 0 auto;
+    padding: 0;
+}
+.content .links li {
+    display: inline-block;
+    margin: auto;
+    padding: 0 5px;
+    transition: opacity .5s;
+}
+.content .links li:hover {
+    opacity: .75;
+}
+.content .links li svg {
+    fill: #FFFFFF;
+    height: 30px;
+    width: 30px;
+    opacity: 0;
+}
+.content .links li svg.discord {
+    animation: scaleIn .3s .65s ease-out forwards;
+}
+.content .links li svg.github {
+    animation: scaleIn .3s .8s ease-out forwards;
+}
+.content .links li svg.twitter {
+    animation: scaleIn .3s .95s ease-out forwards;
+}
+
 @keyframes scaleIn {
     0% {
         transform: scale(0);
