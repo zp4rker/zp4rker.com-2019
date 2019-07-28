@@ -12,7 +12,6 @@ body, html {
 
     animation: coverPage ease-in-out .7s .1s backwards;
 }
-
 .content .title {
     width: 100%;
     padding-top: 40px;
@@ -20,7 +19,6 @@ body, html {
     text-align: center;
     animation: scaleIn ease-out .5s 1s backwards;
 }
-
 .content hr {
     width: 40%;
     margin: 1em auto;
@@ -29,6 +27,34 @@ body, html {
     animation: scaleIn ease-out .3s 1.5s backwards;
 }
 
+.projects {
+    margin: auto;
+
+    color: #FFFFFF;
+
+    border-spacing: 20px;
+    border-collapse: separate;
+}
+.projects td {
+    background-color: #212121;
+    width: 200px;
+    height: 300px;
+    padding: 0;
+}
+.projects td img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-color: #FFFFFF;
+}
+.projects td p {
+    text-align: center;
+    height: 50px;
+    width: 200px;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 5px
+}
 @keyframes coverPage {
     from {
         transform: translate3d(0, 100%, 0) scale(0);
