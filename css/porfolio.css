@@ -38,22 +38,38 @@ body, html {
     border-collapse: separate;
 }
 .projects td {
-    background-color: #212121;
     width: 200px;
     height: 300px;
     padding: 0;
 
-    transition: transform .3s ease-out;
+    background-color: #212121;
+
+    cursor: pointer;
+    transition: all .3s ease-out;
 }
 .projects td:hover {
     transform: scale(1.1);
-    cursor: pointer;
+    box-shadow: 0 5px 40px 5px rgba(0, 0, 0, 0.3);
 }
-.projects td img {
+.projects td:hover > .thumbnail img:nth-child(2) {
+    opacity: 0;
+}
+.projects td .thumbnail {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+.projects td .thumbnail img {
+    position: absolute;
+    top: 0;
     display: block;
     width: 200px;
     height: 200px;
     background-color: #FFFFFF;
+}
+.projects td .thumbnail img:nth-child(2) {
+    background-color: #000000;
+    transition: opacity .3s ease-out;
 }
 .projects td p {
     text-align: center;
